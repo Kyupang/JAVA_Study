@@ -1,0 +1,10 @@
+package 접근제어자;
+
+public class propubl {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

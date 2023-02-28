@@ -1,0 +1,17 @@
+package thread3;
+
+import javax.swing.JFrame;
+
+public class CarGame extends JFrame {
+	class MyThread extends Thread{
+		
+	}
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}

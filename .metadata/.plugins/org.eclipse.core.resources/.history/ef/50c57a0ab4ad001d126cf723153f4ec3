@@ -1,0 +1,17 @@
+package classTest4;
+
+public class Empoloyee {
+	String name;
+	int age;
+	String sex;
+	public Empoloyee(String name, int age, String sex) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.sex = sex;
+	}
+	@Override
+	public String toString() {
+		return "Empoloyee [name=" + name + ", age=" + age + ", sex=" + sex + "]";
+	}
+}

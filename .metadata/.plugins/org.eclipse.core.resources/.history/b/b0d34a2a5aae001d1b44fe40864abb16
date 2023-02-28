@@ -1,0 +1,34 @@
+package hashcode;
+
+public class Student {
+	int studentNumber;
+	String studentName;
+	
+	public Student(int studentNumber, String studentName) {
+		this.studentNumber = studentNumber;
+		this.studentName = studentName;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [studentNumber=" + studentNumber + ", studentName=" + studentName + "]";
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof Student) {
+			Student std = (Student)obj;
+		}
+		return false;
+	}
+
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return super.hashCode();
+	}
+	
+	
+	
+	
+}

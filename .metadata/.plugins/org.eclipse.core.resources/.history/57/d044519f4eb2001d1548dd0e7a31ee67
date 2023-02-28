@@ -1,0 +1,10 @@
+package interfaceStudies;
+
+public class 잭 {
+
+	public static void main(String[] args) {
+		아이폰잭 아이폰 = new 애플잭();
+		
+	}
+
+}

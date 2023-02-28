@@ -1,0 +1,13 @@
+package collection;
+
+import java.util.HashSet;
+import java.util.Random;
+
+public class SetStudy {
+
+	public static void main(String[] args) {
+		Random r = new Random(42);
+		HashSet lotto = new HashSet();
+	}
+
+}

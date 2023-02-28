@@ -1,0 +1,10 @@
+package ChatProgram;
+
+public class 메신저A {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package crawling;
+
+import java.io.IOException;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+
+public class Crawling {
+
+	public static void main(String[] args) throws Exception {
+		Document doc = Jsoup.connect("http://www.naver.com").get();
+		System.out.println("1.네트워크 연결 성공." + doc);
+		
+	}
+
+}

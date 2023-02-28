@@ -1,0 +1,14 @@
+package crawling;
+
+import java.awt.Color;
+
+import javax.swing.JFrame;
+
+public class FinanceCrawling {
+	public static void main(String[] args) {
+		JFrame f = new JFrame();
+		f.setSize(300, 400);
+		f.getContentPane().setBackground(Color.green);
+		f.setVisible(true);
+	}
+}

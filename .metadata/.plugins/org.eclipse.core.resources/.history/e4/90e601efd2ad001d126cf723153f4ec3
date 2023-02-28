@@ -1,0 +1,25 @@
+package inheritance2;
+
+public class Car {
+	int carNumber;
+	int power;
+	String engine;
+	
+	
+	public Car(int carNumber, int power, String engine) {
+		super();
+		this.carNumber = carNumber;
+		this.power = power;
+		this.engine = engine;
+	}
+	
+	public void turnOn() {
+		System.out.println("시동이 걸렸습니다.");
+	}
+	
+	public void turnOff() {
+		System.out.println("시동이 꺼졌습니다.");
+	}
+	
+	
+}

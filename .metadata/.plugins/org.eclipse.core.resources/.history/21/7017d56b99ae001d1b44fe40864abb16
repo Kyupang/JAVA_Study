@@ -1,0 +1,17 @@
+package thread2;
+
+public class ImageThread extends Thread{
+	@Override
+	public void run() {
+		String[] image = {"1.png","2.png","3.png","4.png","5.png"};
+		for (int i = 500; i >0; i--) {
+			
+			try {
+				Thread.sleep(2000);// 2초 재워라 
+			} catch (InterruptedException e) {
+				System.out.println("cpu 연결 문제 생김.");
+			}
+		}
+	}
+
+}

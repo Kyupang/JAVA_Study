@@ -1,0 +1,19 @@
+package collection;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class CollectionProblem {
+
+	public static void main(String[] args) {
+		HashSet set = new HashSet();
+		
+		
+		HashMap map = new HashMap();
+		
+		LinkedList list = new LinkedList();
+	}
+
+}

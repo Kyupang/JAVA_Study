@@ -1,0 +1,9 @@
+package inheritance2;
+
+public class 내차들 {
+
+	public static void main(String[] args) {
+		Car car1 = new Car(1234, 300, "가솔린");
+	}
+
+}

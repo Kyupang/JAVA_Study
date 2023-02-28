@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;java00&apos; to &apos;java_alone&apos;" description="Rename resource &apos;java00&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/java00" name="java_alone" stamp="1675676632155" updateReferences="true"/>
+</session>

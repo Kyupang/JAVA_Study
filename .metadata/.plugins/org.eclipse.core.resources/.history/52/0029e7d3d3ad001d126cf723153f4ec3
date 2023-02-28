@@ -1,0 +1,26 @@
+package inheritance2;
+
+public class Truck extends Car{
+
+	public Truck(int carNumber, int power, String engine) {
+		super(carNumber, power, engine);
+	}
+	
+	public void turnOn() {
+		System.out.println("시동이 걸렸습니다.");
+	}
+
+	public void go() {
+		System.out.println("트럭이 출발합니다!");
+
+	}
+
+	public void stop() {
+		System.out.println("트럭이 멈췄습니다.");
+	}
+
+	public void turnOff() {
+		System.out.println("시동이 꺼졌습니다.");
+	}
+	
+}

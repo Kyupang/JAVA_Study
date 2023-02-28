@@ -1,0 +1,51 @@
+package ChatProgram;
+
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.SocketException;
+
+import javax.swing.JFrame;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+public class 메신저A extends JFrame{
+	
+	DatagramSocket socket;
+	JTextArea list;
+	JTextField input;
+	
+	public 메신저A() {
+		
+	}
+	
+	public void process() {
+		while(true) {
+			try {
+				DatagramSocket socket= new DatagramSocket(7777);
+				System.out.println("받을 준비중...");
+				
+				byte[] data = new byte[256];
+				DatagramPacket packet = new DatagramPacket(data, data.length);
+				
+				socket.receive(packet);
+				System.out.println("받은 데이터는 " + new String(data));
+			
+				
+			
+			} catch (SocketException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		메신저A a = new 메신저A();
+		a.process();
+	}
+
+}

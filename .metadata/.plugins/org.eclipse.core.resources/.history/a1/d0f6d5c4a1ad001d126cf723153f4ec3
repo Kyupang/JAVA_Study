@@ -1,0 +1,5 @@
+package classTest2;
+
+public interface Queue {
+
+}
