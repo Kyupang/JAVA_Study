@@ -1,9 +1,0 @@
-package network2;
-
-public class UDPReceiver {
-
-	public static void main(String[] args) {
-		
-	}
-
-}

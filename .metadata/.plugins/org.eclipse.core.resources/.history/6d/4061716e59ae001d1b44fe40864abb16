@@ -1,6 +1,0 @@
-package hashcode;
-
-public class EqualsTest {
-	Student s1 = new Student(100, "Lee");
-	Student s2 = new Student(100, "Lee");
-}
