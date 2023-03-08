@@ -20,10 +20,7 @@ public class NaverFinanceCrawling3 {
 		String[] name2 = new String[30];
 		try {
 			doc2 = con2.get();
-			//<a class="title"> ==> select("a.title">
 			Elements codeList2 = doc2.select("a.tltle");
-			//System.out.println(codeList2);
-			//System.out.println("===> " + codeList2.size());
 			for (int i=0 ;i<codeList2.size();i++) {
 				//System.out.println(i + " " + codeList2.get(i));
 				Element tmp = codeList2.get(i);
@@ -35,10 +32,6 @@ public class NaverFinanceCrawling3 {
 				name2[i] = name;
 //				System.out.println(code2[i]);
 			}
-			
-//			for (String x: code2) {
-//				System.out.println(x);
-//			}
 		} catch (Exception e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();

@@ -4,10 +4,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
-public class MemberDAO {
+import 화면DB_Connection2.MemberVo;
+
+public class MemberDAO2 {
 	
 	
-	public int insert(String id, String pw, String name, String tel) {
+	public int insert(MemberVo bag) {
 		int result = 0;
 		try {
 			// 1. 오라클 11g 와 연결할 부품 설정
@@ -24,10 +26,10 @@ public class MemberDAO {
 			// 3. SQL 문 만들고
 			String sql = "insert into HR.MEMBER VALUES(?,?,?,?)"; //** 이거 ?가 문법이야.
 			PreparedStatement ps = con.prepareStatement(sql);
-			ps.setString(1, id);
-			ps.setString(2, pw);
-			ps.setString(3, name);
-			ps.setString(4, tel);
+			ps.setString(1, bag.getId());
+			ps.setString(2, bag.getPw());
+			ps.setString(3, bag.getName());
+			ps.setString(4, bag.getTel());
 			
 			System.out.println("3: SQL만들기 성공.");
 
@@ -75,7 +77,7 @@ public class MemberDAO {
 		return result;
 	}
 	
-	public int update(String tel, String id) {
+	public int update(MemberVo bag) {
 		int result= 0;
 		try {
 			//1. 오라클 11g 와 연결할 부품 설정 
@@ -92,8 +94,8 @@ public class MemberDAO {
 			//3. SQL 문 만들고
 			String sql = "UPDATE HR.MEMBER SET TEL =? WHERE ID= ? ";
 			PreparedStatement ps= con.prepareStatement(sql);
-			ps.setString(1, tel);
-			ps.setString(2, id);
+			ps.setString(1, bag.getTel());
+			ps.setString(2, bag.getId());
 			
 			System.out.println("3: SQL만들기 성공.");
 			

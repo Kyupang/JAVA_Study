@@ -15,8 +15,9 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 import JavaDB_Connection.MemberDAO;
+import JavaDB_Connection.MemberDAO2;
 
-public class MemberUI {
+public class MemberUI2 {
 
 	public static void main(String[] args) {
 		JFrame f = new JFrame();
@@ -97,15 +98,24 @@ public class MemberUI {
 				String pw = t2.getText();
 				String name = t3.getText();
 				String tel = t4.getText();
-
-				MemberDAO dao = new MemberDAO();
+				
+				MemberDAO2 dao = new MemberDAO2();
+				//1.가방 만들고
+				MemberVo bag = new MemberVo();
+				
+				//2.가방안에 집어넣고
+				bag.setId(id);
+				bag.setPw(pw);
+				bag.setName(name);
+				bag.setTel(tel);
 				
 				if(id.equals("")) {
 					JOptionPane.showMessageDialog(f, "id는 필수입력 항목입니다.");
 				}
 				
 				try {
-					int result = dao.insert(id, pw, name, tel);
+					//3.가방을 전달한다.
+					int result = dao.insert(bag);
 					if(result !=0) {
 						JOptionPane.showMessageDialog(f, "회원가입 처리가 완료 되었습니다.");
 					}
@@ -132,7 +142,7 @@ public class MemberUI {
 			public void actionPerformed(ActionEvent e) {
 				String id = t1.getText();
 
-				MemberDAO dao = new MemberDAO();
+				MemberDAO2 dao = new MemberDAO2();
 				try {
 					dao.delete(id);
 				} catch (Exception e1) {
@@ -157,10 +167,17 @@ public class MemberUI {
 			public void actionPerformed(ActionEvent e) {
 				String id = t1.getText();
 				String tel = t4.getText();
+				
+				
 
-				MemberDAO dao = new MemberDAO();
+				MemberDAO2 dao = new MemberDAO2();
+				MemberVo bag = new MemberVo();
+				
+				bag.setId(id);
+				bag.setTel(tel);
+				
 				try {
-					dao.update(tel, id);
+					dao.update(bag);
 				} catch (Exception e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();

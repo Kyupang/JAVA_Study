@@ -18,12 +18,5 @@ public class 회원가입 {
 		MemberDAO dao = new MemberDAO();
 		dao.insert(id,pw,name,tel);
 		
-		
-		
-		
-		String tel2 = sc.next();
-		String id3 = sc.next();
-		dao.update(tel2, id3);
-		
 	}
 }
