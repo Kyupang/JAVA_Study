@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="classTest2.ShelfTest"/>
-<fullyQualifiedTypeName name="classTest3.Day"/>
-<fullyQualifiedTypeName name="classTest4.Employee"/>
-<fullyQualifiedTypeName name="classTest5.Mask"/>
-<fullyQualifiedTypeName name="inheritance2.Car"/>
-<fullyQualifiedTypeName name="inheritance2.Truck"/>
-<fullyQualifiedTypeName name="inheritance2.CoffeeTruck"/>
-<fullyQualifiedTypeName name="hashcode.Student"/>
 <fullyQualifiedTypeName name="java.lang.Cloneable"/>
 <fullyQualifiedTypeName name="thread.Thread1"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
@@ -31,7 +23,6 @@
 <fullyQualifiedTypeName name="org.jsoup.nodes.Element"/>
 <fullyQualifiedTypeName name="org.jsoup.select.Elements"/>
 <fullyQualifiedTypeName name="crawling.NavaerFinanceCrawling2"/>
-<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 <fullyQualifiedTypeName name="java.net.ServerSocket"/>
 <fullyQualifiedTypeName name="java.net.Socket"/>
 <fullyQualifiedTypeName name="java.net.Inet4Address"/>
@@ -39,7 +30,6 @@
 <fullyQualifiedTypeName name="java.net.DatagramSocket"/>
 <fullyQualifiedTypeName name="javax.swing.JTextArea"/>
 <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
-<fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
 <fullyQualifiedTypeName name="java.net.DatagramPacket"/>
 <fullyQualifiedTypeName name="java.lang.Class"/>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
@@ -48,7 +38,6 @@
 <fullyQualifiedTypeName name="JavaDB_Connection.MemberDAO"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="JavaDB_Connection.BbsDAO"/>
 <fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="javax.swing.JLabel"/>
 <fullyQualifiedTypeName name="java.awt.Font"/>
@@ -58,6 +47,17 @@
 <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
 <fullyQualifiedTypeName name="javax.swing.Icon"/>
 <fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
+<fullyQualifiedTypeName name="JDBC_for_product.ProductDAO"/>
+<fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+<fullyQualifiedTypeName name="JavaDB_Connection.BbsDAO"/>
+<fullyQualifiedTypeName name="화면DB_Connection2.BbsVo"/>
 <fullyQualifiedTypeName name="JavaDB_Connection.MemberDAO2"/>
 <fullyQualifiedTypeName name="화면DB_Connection2.MemberVo"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="LoginPackage.MemberUI5"/>
+<fullyQualifiedTypeName name="LoginPackage.BbsUI5"/>
+<fullyQualifiedTypeName name="JDBC_for_product.ProductVO"/>
+<fullyQualifiedTypeName name="MiniProject.MP_ProductDAO"/>
+<fullyQualifiedTypeName name="MiniProject.MP_ProductVO"/>
 </qualifiedTypeNameHistroy>

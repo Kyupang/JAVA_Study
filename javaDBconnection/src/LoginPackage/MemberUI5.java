@@ -1,4 +1,4 @@
-package 화면DB_Connection2;
+package LoginPackage;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -6,8 +6,6 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -16,10 +14,10 @@ import javax.swing.JTextField;
 
 import JavaDB_Connection.MemberDAO;
 import JavaDB_Connection.MemberDAO2;
+import 화면DB_Connection2.MemberVo;
 
-public class MemberUI2 {
-
-	public static void main(String[] args) {
+public class MemberUI5 {
+	public static void open() {
 		JFrame f = new JFrame();
 		f.setTitle("나의 회원가입 화면");
 		f.setSize(520, 700);
@@ -211,5 +209,4 @@ public class MemberUI2 {
 		f.setVisible(true);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
-
 }
