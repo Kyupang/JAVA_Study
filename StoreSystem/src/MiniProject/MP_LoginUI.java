@@ -20,7 +20,8 @@ public class MP_LoginUI {
 
 		JFrame f = new JFrame();
 		f.setSize(380, 300);
-
+		f.getContentPane().setBackground(Color.white);
+		
 		// CREATE NEW // PANEL TABLE
 		ImageIcon icon = new ImageIcon("Olive.png");
 		JLabel l1 = new JLabel(icon);
@@ -29,9 +30,9 @@ public class MP_LoginUI {
 		JLabel l2 = new JLabel("ID    ");
 		JLabel l3 = new JLabel("PW  ");
 
-		Font font1 = new Font("D2coding", Font.BOLD, 40);
-		Font font2 = new Font("D2coding", Font.BOLD, 30);
-		Font font3 = new Font("D2coding", Font.BOLD, 15);
+		Font font1 = new Font("D2Coding", Font.BOLD, 40);
+		Font font2 = new Font("D2Coding", Font.BOLD, 30);
+		Font font3 = new Font("D2Coding", Font.BOLD, 15);
 		JTextField t1 = new JTextField(10);
 		JTextField t2 = new JTextField(10);
 
@@ -54,14 +55,20 @@ public class MP_LoginUI {
 		b2.setFont(font3);
 		b3.setFont(font3);
 		b4.setFont(font3);
-
+		
+		Color c1 = new Color(155,206,39);
+		b1.setBackground(c1);
+		b1.setForeground(Color.white);
+		b2.setBackground(c1);
+		b2.setForeground(Color.white);
+		b3.setBackground(c1);
+		b3.setForeground(Color.white);
+		b4.setBackground(c1);
+		b4.setForeground(Color.white);
+		
 		t1.setBackground(Color.white);
 		t2.setBackground(Color.white);
 
-		b1.setBackground(Color.white);
-		b2.setBackground(Color.white);
-		b3.setBackground(Color.white);
-		b4.setBackground(Color.white);
 		
 		b2.addActionListener(new ActionListener() {
 			

@@ -1,6 +1,7 @@
 package MiniProject;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -21,7 +22,6 @@ import javax.swing.JTable;
 public class MP_ProductUI {
 	public static JScrollPane scrollPane;
 
-	
 	public void open() {
 
 		// ---------------------------------------------------------
@@ -46,11 +46,12 @@ public class MP_ProductUI {
 
 		JFrame f = new JFrame();
 		f.setSize(528, 600);
-
+		f.getContentPane().setBackground(Color.white);
+		
 		// CREATE NEW // PANEL TABLE
 		ImageIcon icon = new ImageIcon("Olive.png");
 		JLabel l1 = new JLabel(icon);
-		JLabel l2 = new JLabel("				제품관리");
+		JLabel l2 = new JLabel("				제품 관리");
 		JButton b1 = new JButton("제품등록");
 		JButton b2 = new JButton("제품검색");
 		JButton b3 = new JButton("제품재고수정");
@@ -61,17 +62,34 @@ public class MP_ProductUI {
 		JPanel p = new JPanel();
 		JTable table = new JTable(all, header);
 		scrollPane = new JScrollPane(table);
-
-		// SET FONT
-		Font font1 = new Font("D2Conding", Font.BOLD, 40);
-		Font font2 = new Font("D2Conding", Font.CENTER_BASELINE, 12);
-
+		
 		// SET FLOW
 		FlowLayout flow = new FlowLayout();
 		f.setLayout(flow);
-
+		// SET FONT
+		Font font1 = new Font("D2Conding", Font.BOLD, 40);
+		Font font2 = new Font("D2Conding", Font.CENTER_BASELINE, 12);
+		Font font3 = new Font("돋움", Font.BOLD, 30);
+		Font font4 = new Font("D2Conding", Font.CENTER_BASELINE, 12);
+		
+		l2.setForeground(new Color(166,203,71));
+		Color c1 = new Color(155,206,39);
+		Color c2 = new Color(190,232,81);
+		b1.setBackground(c1);
+		b1.setForeground(Color.white);
+		b2.setBackground(c1);
+		b2.setForeground(Color.white);
+		b3.setBackground(c1);
+		b3.setForeground(Color.white);
+		b4.setBackground(c1);
+		b4.setForeground(Color.white);
+		b5.setBackground(c1);
+		b5.setForeground(Color.white);
+		p.setBackground(c1);
+		
+		
 		l1.setFont(font1);
-		l2.setFont(font1);
+		l2.setFont(font3);
 		b1.setFont(font2);
 		b2.setFont(font2);
 		b3.setFont(font2);
@@ -156,15 +174,23 @@ public class MP_ProductUI {
 
 				JFrame f = new JFrame();
 				f.setSize(528, 600);
-				JLabel l1 = new JLabel("<검색 결과>        ");
+				f.getContentPane().setBackground(Color.white);
+
+				JLabel l1 = new JLabel("검색 결과");
 				JPanel panel = new JPanel();
 				JTable table = new JTable(all, header);
 				JScrollPane scrollPane = new JScrollPane(table);
 
-				Font font1 = new Font("D2Conding", Font.BOLD, 40);
-				Font font2 = new Font("D2Conding", Font.BOLD, 20);
+				Font font1 = new Font("돋움", Font.BOLD, 35);
 				l1.setFont(font1);
+				
+				
+				l1.setForeground(new Color(166,203,71));
+				panel.setBackground(new Color(155,206,39));
 
+				
+				
+				
 				FlowLayout flow = new FlowLayout();
 				f.setLayout(flow);
 

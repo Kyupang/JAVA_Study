@@ -26,7 +26,6 @@
 <fullyQualifiedTypeName name="JavaDB_Connection.MemberDAO"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="javax.swing.JTextField"/>
 <fullyQualifiedTypeName name="javax.swing.Icon"/>
 <fullyQualifiedTypeName name="JDBC_for_product.ProductDAO"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="MiniProject.MP_StartUI"/>
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 <fullyQualifiedTypeName name="MiniProject.MP_LoginUI"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
 </qualifiedTypeNameHistroy>
