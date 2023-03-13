@@ -24,7 +24,6 @@ public class MemberUI2 {
 		f.setTitle("나의 회원가입 화면");
 		f.setSize(520, 700);
 		f.getContentPane().setBackground(Color.green);
-		// JLabel l1 = new JLabel("<<네이버 회원가입화면>>");
 
 		JLabel l1 = new JLabel("<<<네이버 회원가입>>>");
 		JLabel l2 = new JLabel("ID  ");
